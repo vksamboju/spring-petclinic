@@ -7,6 +7,9 @@ node ('MVN') {
     stage('Build') {
         sh 'mvn package'
     }
+    stage('dummy') {
+        sh 'pwd'
+    }
 
     stage('Archive') {
         archive 'target//*.jar'
