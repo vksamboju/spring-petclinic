@@ -1,7 +1,7 @@
 node ('MVN') {
     
     stage('GIT') {
-        git branch: 'dev', url: 'https://github.com/sambojuvk/spring-petclinic.git'
+        git branch: 'dev', url: 'https://github.com/vksamboju/spring-petclinic.git'
     }
     
     stage('Build') {
