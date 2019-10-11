@@ -5,7 +5,7 @@ node ('MVN') {
     }
     
     stage('Build') {
-        sh 'mvn package'
+        sh 'mvn install'
     }
     stage('dummy') {
         sh 'pwd'
