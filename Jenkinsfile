@@ -11,8 +11,4 @@ node ('MVN') {
         sh 'pwd'
     }
 
-    stage('Archive') {
-        archive 'target//*.jar'
-        junit 'target/surefire-reports/*.xml'
-    }
 }
